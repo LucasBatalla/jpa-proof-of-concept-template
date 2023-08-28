@@ -1,12 +1,14 @@
 package db;
 
 
-import io.github.flbulgarelli.jpa.extras.test.SimplePersistenceTest;
+
 import org.junit.jupiter.api.Test;
+import org.uqbarproject.jpa.java8.extras.WithGlobalEntityManager;
+import org.uqbarproject.jpa.java8.extras.test.AbstractPersistenceTest;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-public class ContextTest implements SimplePersistenceTest {
+public class ContextTest extends AbstractPersistenceTest implements WithGlobalEntityManager {
 
   @Test
   void contextUp() {
@@ -18,5 +20,6 @@ public class ContextTest implements SimplePersistenceTest {
     withTransaction(() -> {
     });
   }
+
 
 }

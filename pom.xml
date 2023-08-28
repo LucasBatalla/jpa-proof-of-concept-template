@@ -23,18 +23,14 @@
     </dependency>
 
     <!-- JPA Persistence Dependencies -->
-    <dependency>
-      <groupId>io.github.flbulgarelli</groupId>
-      <artifactId>jpa-extras</artifactId>
-      <version>1.0.0-rc1</version>
-    </dependency>
+
 
     <!-- drivers jdbc -->
     <!-- mysql -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.17</version>
+      <version>8.0.30</version>
     </dependency>
 
     <!-- hsqldb -->
@@ -45,6 +41,11 @@
       <scope>provided</scope>
     </dependency>
 
+    <dependency>
+      <groupId>org.uqbar-project</groupId>
+      <artifactId>jpa-java8-extras</artifactId>
+      <version>1.0-alpha-1</version>
+    </dependency>
     <!-- dependency test -->
 
     <dependency>
